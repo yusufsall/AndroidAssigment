@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+    >
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="100dp"
+                    android:paddingLeft="100dp"
+    >
+        <TextView
+                android:text="Yemekler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15pt"
+                android:textColor="#0000ff"
+                android:paddingBottom="100dp"
+                android:id="@+id/yemektext"
+                android:layout_centerHorizontal="true"
+        />
+        <EditText
+                android:layout_below="@id/yemektext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Kullanıcı Adı"
+                android:ems="10"
+                tools:layout_editor_absoluteY="109dp"
+                tools:layout_editor_absoluteX="84dp"
+                android:drawableLeft="@mipmap/user"
+                android:id="@+id/user"/>
+        <EditText
+                android:layout_below="@id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Şifre"
+                android:drawableLeft="@mipmap/pass"
+                android:ems="10"
+                tools:layout_editor_absoluteY="189dp"
+                tools:layout_editor_absoluteX="84dp"
+                android:id="@+id/pass"/>
+
+        <Switch
+                android:text="Beni Hatırla"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rememberme"/>
+        <Button
+                android:text="Giriş"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/rememberme"
+                android:background="@drawable/border"
+                android:textColor="#fff"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"/>
+    </RelativeLayout>
+</LinearLayout>
